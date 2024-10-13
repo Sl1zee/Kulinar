@@ -1,0 +1,14 @@
+version: 1
+project: my-project2
+
+repositories:
+
+    echobot:
+
+        url: https://github.com/Sl1zee/Kulinar
+        branch: main
+
+
+        cpu: 1
+        cpuFraction: 20
+        memory: 256MiB
