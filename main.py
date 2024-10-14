@@ -24,7 +24,7 @@ def handle_message(message):
     if message.text == "Завтрак":
         markup = types.InlineKeyboardMarkup()
         markup.add(types.InlineKeyboardButton('Омлет с овощами и сосисками', url='https://t.me/Top_kul1nar/3'))
-        markup.add(types.InlineKeyboardButton('Пакейки', url='https://t.me/Top_kul1nar/5'))
+        markup.add(types.InlineKeyboardButton('Панкейки', url='https://t.me/Top_kul1nar/5'))
         markup.add(types.InlineKeyboardButton('Оладьи с колбасой и сыром', url='https://t.me/Top_kul1nar/7'))
 
         bot.send_message(message.chat.id, "Все рецепты:", reply_markup=markup)
