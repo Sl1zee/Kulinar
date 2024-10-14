@@ -24,21 +24,16 @@ def handle_message(message):
     if message.text == "Завтрак":
         markup = types.InlineKeyboardMarkup()
         markup.add(types.InlineKeyboardButton('Омлет с овощами и сосисками', url='https://t.me/Top_kul1nar/3'))
-        markup.add(types.InlineKeyboardButton('Хлопья', url='https://t.me/+_hLsm8pdiBs1MzBi'))
-        markup.add(types.InlineKeyboardButton('Каша', url='https://t.me/+_hLsm8pdiBs1MzBi'))
-
-
-
-
+        markup.add(types.InlineKeyboardButton('Пакейки', url='https://t.me/Top_kul1nar/5'))
+        markup.add(types.InlineKeyboardButton('Оладьи с колбасой и сыром', url='https://t.me/Top_kul1nar/7'))
 
         bot.send_message(message.chat.id, "Все рецепты:", reply_markup=markup)
+        
     if message.text == "Обед":
         markup = types.InlineKeyboardMarkup()
-        markup.add(types.InlineKeyboardButton('Суп', url='https://t.me/+_hLsm8pdiBs1MzBi'))
-
-
-
-
+        markup.add(types.InlineKeyboardButton('Сосиски в тесте', url='https://t.me/Top_kul1nar/8'))
+        markup.add(types.InlineKeyboardButton('Курица под соусом терияки', url='https://t.me/Top_kul1nar/9'))
+        markup.add(types.InlineKeyboardButton('Суп-пюре из тыквы', url='https://t.me/Top_kul1nar/10'))
 
         bot.send_message(message.chat.id, "Все рецепты:", reply_markup=markup)
 
@@ -55,26 +50,17 @@ def handle_message(message):
 
     if message.text == "Десерт":
         markup = types.InlineKeyboardMarkup()
-        markup.add(types.InlineKeyboardButton('Торт', url='https://t.me/+_hLsm8pdiBs1MzBi'))
-
-
-
-
-
-
+        markup.add(types.InlineKeyboardButton('Творожно-банановый десерт', url='https://t.me/Top_kul1nar/6'))
+        markup.add(types.InlineKeyboardButton('Шоколадные маффины "Брауни"', url='https://t.me/Top_kul1nar/12'))
+        markup.add(types.InlineKeyboardButton('"Рафаэлло"', url='https://t.me/Top_kul1nar/15'))
+        
         bot.send_message(message.chat.id, "Все рецепты:", reply_markup=markup)
 
     if message.text == "Предложить рецепт":
         markup = types.InlineKeyboardMarkup()
         markup.add(types.InlineKeyboardButton('Предложить рецепт', url='https://t.me/For_Kulinar_Bot'))
 
-
-
-
-
-
         bot.send_message(message.chat.id, "Предложить рецепт ТУТ:", reply_markup=markup)
-
 
 if __name__ == "__main__":
     bot.polling(none_stop=True)
