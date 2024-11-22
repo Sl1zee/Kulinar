@@ -1,12 +1,11 @@
-import logging
+import dotenv
+from dotenv import load_dotenv
 import os
-
 import telebot
 from telebot import types
 
-application = Application.builder().token(
-        os.environ.get("TOKEN")
-    ).build()
+load_dotenv()
+bot = telebot.TeleBot(os.getenv('TOKEN'))
 
 @bot.message_handler(commands=['start'])
 def start(message):
