@@ -1,13 +1,15 @@
+import logging
+import os
+
 import telebot
 from telebot import types
 
-application = Application.builder().token(
-    os.environ.get("TOKEN")
-).build()
-
-
 @bot.message_handler(commands=['start'])
 def start(message):
+    application = Application.builder().token(
+        os.environ.get("TOKEN")
+    ).build()
+    
     bot.send_message(message.chat.id, "Добро пожаловать в бота Кулиар!\nЗдесь вы найдете множество вкусных рецептов.")
 
     markup = types.ReplyKeyboardMarkup()
