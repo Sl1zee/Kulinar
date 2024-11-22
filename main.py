@@ -4,11 +4,12 @@ import os
 import telebot
 from telebot import types
 
-@bot.message_handler(commands=['start'])
-def start(message):
-    application = Application.builder().token(
+application = Application.builder().token(
         os.environ.get("TOKEN")
     ).build()
+
+@bot.message_handler(commands=['start'])
+def start(message):
     
     bot.send_message(message.chat.id, "Добро пожаловать в бота Кулиар!\nЗдесь вы найдете множество вкусных рецептов.")
 
