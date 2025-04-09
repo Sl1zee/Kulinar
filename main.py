@@ -9,8 +9,8 @@ def start(message):
         application = Application.builder().token(
         os.environ.get("TOKEN")
     ).build()
-    
-   # bot.send_message(message.chat.id, "Добро пожаловать в бота Кулиар!\nЗдесь вы найдете множество вкусных рецептов.")
+
+    bot.send_message(message.chat.id, "Добро пожаловать в бота Кулиар!\nЗдесь вы найдете множество вкусных рецептов.")
 
     markup = types.ReplyKeyboardMarkup()
     btn1 = types.KeyboardButton("Завтрак")
