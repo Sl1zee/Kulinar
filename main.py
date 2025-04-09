@@ -5,7 +5,7 @@ bot = telebot.TeleBot('7543169821:AAH21rDta0DR6bxhddu6yVHi2C7BTnv7I-0')
 
 @bot.message_handler(commands=['start'])
 def start(message):
-
+    
     bot.send_message(message.chat.id, "Добро пожаловать в бота Кулиар!\nЗдесь вы найдете множество вкусных рецептов.")
 
     markup = types.ReplyKeyboardMarkup()
@@ -28,12 +28,6 @@ def handle_message(message):
         markup.add(types.InlineKeyboardButton('Панкейки', url='https://t.me/Top_kul1nar/5'))
         markup.add(types.InlineKeyboardButton('Оладьи с колбасой и сыром', url='https://t.me/Top_kul1nar/7'))
         markup.add(types.InlineKeyboardButton('Сырные кексы с зелёным луком', url='https://t.me/Top_kul1nar/17'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
 
         bot.send_message(message.chat.id, "Все рецепты:", reply_markup=markup)
         
@@ -43,26 +37,11 @@ def handle_message(message):
         markup.add(types.InlineKeyboardButton('Курица под соусом терияки', url='https://t.me/Top_kul1nar/9'))
         markup.add(types.InlineKeyboardButton('Суп-пюре из тыквы', url='https://t.me/Top_kul1nar/10'))
         markup.add(types.InlineKeyboardButton('Рыбные котлеты из консервы', url='https://t.me/Top_kul1nar/18'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
         
         bot.send_message(message.chat.id, "Все рецепты:", reply_markup=markup)
 
     if message.text == "Ужин":
         markup = types.InlineKeyboardMarkup()
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
         markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
 
         bot.send_message(message.chat.id, "Все рецепты:", reply_markup=markup)
@@ -73,12 +52,6 @@ def handle_message(message):
         markup.add(types.InlineKeyboardButton('Шоколадные маффины "Брауни"', url='https://t.me/Top_kul1nar/12'))
         markup.add(types.InlineKeyboardButton('"Рафаэлло"', url='https://t.me/Top_kul1nar/15'))
         markup.add(types.InlineKeyboardButton('Пончики на сгущёнке', url='https://t.me/Top_kul1nar/16'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
-        markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
         
         bot.send_message(message.chat.id, "Все рецепты:", reply_markup=markup)
 
