@@ -51,7 +51,7 @@ def handle_message(message):
         markup.add(types.InlineKeyboardButton('Запеканка из картофеля и мясного фарша', url='https://t.me/Top_kul1nar/19'))
         markup.add(types.InlineKeyboardButton('Жаркое из курицы с картошкой', url='https://t.me/Top_kul1nar/38'))
         markup.add(types.InlineKeyboardButton('Картошка-гармошка', url='https://t.me/Top_kul1nar/40'))
-        markup.add(types.InlineKeyboardButton('Трубочки из лаваша', url='https://t.me/Top_kul1nar/42))
+        markup.add(types.InlineKeyboardButton('Трубочки из лаваша', url='https://t.me/Top_kul1nar/42'))
         markup.add(types.InlineKeyboardButton('Сырные палочки', url='https://t.me/Top_kul1nar/44'))
         markup.add(types.InlineKeyboardButton('Курица под соусом терияки', url='https://t.me/Top_kul1nar/9'))
         markup.add(types.InlineKeyboardButton('Бешбармак', url='https://t.me/Top_kul1nar/46'))
