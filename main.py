@@ -55,9 +55,6 @@ def handle_message(message):
         markup.add(types.InlineKeyboardButton('ТЕСТ', url='https://t.me/Top_kul1nar/'))
         markup.add(types.InlineKeyboardButton('ТЕСТ', url='https://t.me/Top_kul1nar/'))
         markup.add(types.InlineKeyboardButton('ТЕСТ', url='https://t.me/Top_kul1nar/'))
-        markup.add(types.InlineKeyboardButton('ТЕСТ', url='https://t.me/Top_kul1nar/'))
-        markup.add(types.InlineKeyboardButton('ТЕСТ', url='https://t.me/Top_kul1nar/'))
-        markup.add(types.InlineKeyboardButton('ТЕСТ', url='https://t.me/Top_kul1nar/'))
 
         bot.send_message(message.chat.id, "Все рецепты:", reply_markup=markup)
 
