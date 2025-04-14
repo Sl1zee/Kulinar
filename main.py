@@ -6,7 +6,7 @@ bot = telebot.TeleBot('7543169821:AAH21rDta0DR6bxhddu6yVHi2C7BTnv7I-0')
 @bot.message_handler(commands=['start'])
 def start(message):
     
-    bot.send_message(message.chat.id, "Добро пожаловать в бота Кулиар!\nЗдесь вы найдете множество вкусных рецептов.")
+    bot.send_message(message.chat.id, "Добро пожаловать в бота Кулинар!\nЗдесь вы найдете множество вкусных рецептов.")
 
     markup = types.ReplyKeyboardMarkup()
     btn1 = types.KeyboardButton("Завтрак")
